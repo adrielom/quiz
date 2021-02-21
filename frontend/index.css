@@ -39,6 +39,13 @@ body {
     margin: 0;
 }
 
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -68,14 +75,13 @@ nav {
 hr {
     background-color: var(--lightGrey);
     border-width: 0;
-    height: .2px;
+    height: .5px;
 }
 
-.avatar img {
-    height: 70px;
-    width: 70px;
+.image img {
+    max-height: 200px;
+    width: auto;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 section {
@@ -84,17 +90,18 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 5%;
 }
 
-.avatar {
+.image {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5% auto;
+    margin: 2% auto;
 
 }
 
-.avatar h1 {
+.image h1 {
     margin: auto;
     margin-top: 5%;
     width: 70%;
@@ -102,7 +109,7 @@ section {
     font-family: SofiaRegular;
 }
 
-.avatar div {
+.image div {
     margin: auto;
 }
 
@@ -123,6 +130,7 @@ section {
     height: 18vh;
     width: auto;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .cards .icons {

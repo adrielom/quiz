@@ -13,7 +13,7 @@
     <header>
         <nav>
             <div class="title">
-                <h1>renno</h1>
+                <h1>quiz<code>let</code></h1>
             </div>
             <div class="tabButtons">
                 <button><i class="fas fa-long-arrow-alt-left"></i></button>
@@ -23,42 +23,40 @@
         <hr>
     </header>
     <section>
-        <div class="avatar">
+        <div class="image">
             <div>
                 <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                    alt="avatar">
+                    alt="main question">
             </div>
-            <h1>What is the current layout of your bathroom?</h1>
+            <h1> <code>x + y = 20</code></h1>
         </div>
         <div class="cards">
             <div class="card">
                 <div class="icons">
                     <i class="fas fa-sink"></i>
-                    <i class="fas fa-toilet"></i>
                 </div>
-                <p class="answer">Sink & toilet only</p>
-            </div>
-            <div class="card active">
-                <div class="icons">
-                    <i class="fas fa-shower"></i>
-                    <i class="fas fa-bath"></i>
-                </div>
-                <p class="answer">Seperate shower & tub</p>
+                <p option="a" class="answer">Sink & toilet only</p>
             </div>
             <div class="card">
                 <div class="icons">
                     <i class="fas fa-shower"></i>
                 </div>
-                <p class="answer">Shower(no tub)</p>
+                <p option="b" class="answer">Seperate shower & tub</p>
+            </div>
+            <div class="card">
+                <div class="icons">
+                    <i class="fas fa-shower"></i>
+                </div>
+                <p option="c" class="answer">Shower(no tub)</p>
             </div>
             <div class="card">
                 <div class="icons">
                     <i class="fas fa-hot-tub"></i>
                 </div>
-                <p class="answer">Hot tub style</p>
+                <p option="d" class="answer">Hot tub style</p>
             </div>
         </div>
-        <button class="sub">Next</button>
+        <button class="sub">Send</button>
     </section>
 
     <script src="./index.js"></script>
