@@ -1,0 +1,174 @@
+:root {
+    --grey: #F9F7F7;
+    --orange: #D37E65;
+    --darkGrey: #7E7D7D;
+    --black: #180A0D;
+    --lightGrey: #e6e6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+@font-face {
+    font-family: SofiaBold;
+    src: url(./fonts/Sofia\ Pro\ Bold\ Az.otf);
+}
+
+@font-face {
+    font-family: SofiaRegular;
+    src: url(./fonts/Sofia\ Pro\ Regular\ Az.otf);
+}
+
+@font-face {
+    font-family: SofiaMedium;
+    src: url(./fonts/Sofia\ Pro\ Medium\ Az.otf);
+}
+
+
+.title h1 {
+    font-family: SofiaMedium;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+.tabButtons {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabButtons i {
+    font-size: 1.2rem;
+}
+
+.tabButtons button {
+    background: var(--grey);
+    height: 40px;
+    width: 40px;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+hr {
+    background-color: var(--lightGrey);
+    border-width: 0;
+    height: .2px;
+}
+
+.avatar img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% auto;
+
+}
+
+.avatar h1 {
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    text-align: center;
+    font-family: SofiaRegular;
+}
+
+.avatar div {
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    ;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--grey);
+    height: 18vh;
+    width: auto;
+    border-radius: 5px;
+}
+
+.cards .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 10vw;
+    margin: auto;
+    align-items: center;
+}
+
+.cards .icons i {
+    font-size: 2.5em;
+    color: var(--darkGrey);
+}
+
+.cards p {
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: SofiaRegular;
+    color: var(--darkGrey);
+}
+
+.sub {
+    height: 50px;
+    width: 20%;
+    margin: auto;
+    margin-top: 2%;
+    background: var(--orange);
+    color: white;
+    font-family: SofiaRegular;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.active {
+    border-style: solid;
+    border-width: 2px !important;
+    border-color: var(--orange) !important;
+}
+
+.active p {
+    color: var(--orange) !important;
+}
+
+.active i {
+    color: var(--orange) !important;
+}
