@@ -133,24 +133,9 @@ section {
     cursor: pointer;
 }
 
-.cards .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 70%;
-    width: 10vw;
-    margin: auto;
-    align-items: center;
-}
-
-.cards .icons i {
-    font-size: 2.5em;
-    color: var(--darkGrey);
-}
-
 .cards p {
+    font-size: 1.3em;
     margin: auto;
-    margin-bottom: 20px;
     font-family: SofiaRegular;
     color: var(--darkGrey);
 }
@@ -174,9 +159,5 @@ section {
 }
 
 .active p {
-    color: var(--orange) !important;
-}
-
-.active i {
     color: var(--orange) !important;
 }
